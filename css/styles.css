@@ -1,0 +1,2519 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   
+   CSS RESET
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border:0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: top;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/****************************************************************
+Embedded Web Fonts 
+*****************************************************************/
+@font-face{ 
+	font-family: 'mplus-1m-regular-webfont';
+	src: url('fonts/mplus-1m-regular-webfont.eot');
+	src: url('fonts/mplus-1m-regular-webfont.eot?iefix') format('eot'),
+	     url('fonts/mplus-1m-regular-webfont.woff') format('woff'),
+	     url('fonts/mplus-1m-regular-webfont.ttf') format('truetype'),
+	     url('fonts/mplus-1m-regular-webfont.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{ 
+	font-family: 'mplus-1m-medium-webfont';
+	src: url('fonts/mplus-1m-medium-webfont.eot');
+	src: url('fonts/mplus-1m-medium-webfont.eot?iefix') format('eot'),
+	     url('fonts/mplus-1m-medium-webfont.woff') format('woff'),
+	     url('fonts/mplus-1m-medium-webfont.ttf') format('truetype'),
+	     url('fonts/mplus-1m-medium-webfont.svg#webfont') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face{ 
+	font-family: 'mplus-1m-bold-webfont';
+	src: url('fonts/mplus-1m-bold-webfont.eot');
+	src: url('fonts/mplus-1m-bold-webfont.eot?iefix') format('eot'),
+	     url('fonts/mplus-1m-bold-webfont.woff') format('woff'),
+	     url('fonts/mplus-1m-bold-webfont.ttf') format('truetype'),
+	     url('fonts/mplus-1m-bold-webfont.svg#webfont') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face{ 
+	font-family: 'OpenSans-CondLightItalic-webfont';
+	src: url('fonts/OpenSans-CondLightItalic-webfont.eot');
+	src: url('fonts/OpenSans-CondLightItalic-webfont.eot?iefix') format('eot'),
+	     url('fonts/OpenSans-CondLightItalic-webfont.woff') format('woff'),
+	     url('fonts/OpenSans-CondLightItalic-webfont.ttf') format('truetype'),
+	     url('fonts/OpenSans-CondLightItalic-webfont.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+
+
+/*********************************************************************/
+/*********************************************************************/
+/* Regular CSS */
+/*********************************************************************/
+/*********************************************************************/
+
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: 90% 'mplus-1m-regular-webfont', Open Sans, arial, sans-serif;
+	line-height: 1.88889;
+	color: #262626; 
+	background: #fff url(blossoms.jpg) no-repeat bottom right; 
+	margin: 0; 
+	padding: 0;
+	}
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	}
+
+
+	
+	
+	
+#wrapper {   /* All encompassing div */
+max-width:2200px; 
+width:100%; 
+margin:auto;
+padding:auto; 
+position: relative;
+height:100%;
+}
+	
+#topcontainer {  /* Div in topmenu.php which is in all pages, for displaying the navigation sections at the top */
+	min-height: 116px;
+	max-height: 100%;
+	background-color:#ECE9E4; /* Light Gray */
+	margin:0px;
+	padding:0px;
+	border-style:solid;
+	border-bottom-width:0px;
+	border-bottom-color:#FFFFFF;
+}
+
+#toptop {  /* The topmost navigation section */
+	height: 33px;
+	background-color: #232323;  /* Dark Gray */
+	width: 100%;
+	margin: 0 auto 0 auto;
+	padding: 0 auto 0 auto;
+}
+	
+#top {  /* The lower top navigation section */
+	width: 93.107%;      
+	min-height: 83px;
+	max-height: 100%;
+	margin: 0 auto 0 auto;
+	padding: 0 auto 0 auto;
+	position:relative;
+}	
+
+
+
+
+/******************************************************* 
+Links, text and elements in the top navigation sections
+********************************************************/
+span.toptoplinks {
+  font: bold 12px/18px 'mplus-1m-medium-webfont', Open Sans, sans-serif;
+  color: #EEEEEE; /* LIGHT GRAY */
+  display:none;
+  height:24px;
+  vertical-align: middle;
+  position:relative; bottom:-4px;
+  padding:10px;
+ } 
+ 
+span.toptoplinksother {
+  font: bold 12px/18px 'mplus-1m-medium-webfont', Open Sans, sans-serif;
+  color: #EEEEEE;
+  display:inline;
+  height:24px;
+  vertical-align: middle;
+  position:relative; bottom:-4px;
+  padding:10px;
+}
+
+span.promoline{
+	display:inline;
+	}
+
+#signinicon{
+	width:5.39%; /* with respect to the 1262px wrapper width. Previous: 68px; */
+	height:83px;
+	display:inline;
+	float:right;
+	border-style:solid; border-color:#B4B0B0; border-width:0 0 0 1px;
+}
+
+#carticon{
+	margin-left:0px;
+	width:5.39%; /* with respect to the 1262px wrapper width. Previous: 68px; */ 
+	height:83px;
+	display:inline;
+	float:right;
+	border-style:solid; border-color:#B4B0B0; border-width:0 1px 0 1px;
+}
+
+#si, #ci {   /* signin and cart icons */
+	margin-left:32.35%; margin-right:32.35%; /* with respect to the 68px signinicon and carticon div widths. Previous: 22px; */
+	margin-top:26px;
+}
+
+#companylogo {
+	float:left; 
+	margin:0 0 0 3.96%; padding: 0;
+	width:158px; height: 116px;
+	/* Previous: margin:10px 0 10px 92px; padding: 0px; */
+	/* position:relative; bottom:-6px; */
+}
+
+#companylogo_flattened {
+	display: none;
+}
+
+
+
+
+
+
+/***********************************************************/
+/* Links - General */
+/***********************************************************/
+
+a:link {text-decoration:none;color:#202020;} /* dark gray, previously gold yellow #EA5D26 */
+a:visited {color:#202020;}
+a:hover {color:#D4A50F;}  /* gold yellow. previously fortnum gold, very dark gray #34312e*/
+a:active {color:#202020;}
+
+a.graylink-ul:link {text-decoration:underline;color:#D4A50F;} /* gold yellow - used in designer alphabetical selector */
+a.graylink-ul:visited {color:#D4A50F;}
+a.graylink-ul:hover {color:#202020;}  /* dark gray */
+a.graylink-ul:active {color:#D4A50F;}
+
+a.colorlink:link {text-decoration:none;color:#D4A50F;} /* gold yellow - used in designer alphabetical selector */
+a.colorlink:visited {color:#D4A50F;}
+a.colorlink:hover {color:#202020;}  /* dark gray */
+a.colorlink:active {color:#D4A50F;}
+
+a.colorlink-ul:link {text-decoration:underline;color:#D4A50F;} /* gold yellow - used in designer alphabetical selector */
+a.colorlink-ul:visited {color:#D4A50F;}
+a.colorlink-ul:hover {color:#202020;}  /* dark gray */
+a.colorlink-ul:active {color:#D4A50F;}
+	
+a.topmenu:link  {text-decoration:none;color:#202020;font:12px/16px 'mplus-1m-regular-webfont', Open Sans,arial,sans-serif;}   /* dark gray. Previously white, gold #88773F */
+a.topmenu:visited {color:#202020;}
+a.topmenu:hover {color:#D4A50F;}  /* gold yellow */
+a.topmenu:active {color#202020;} 
+
+a.uppertopmenu:link  {text-decoration:none;color:#202020;font:12px/12px 'mplus-1m-regular-webfont', Open Sans,arial,sans-serif;}  /* dark gray. previously dark gold #C09841, white */
+a.uppertopmenu:visited {color:#202020;}
+a.uppertopmenu:hover {color:#D4A50F;}  /* gold yellow */
+a.uppertopmenu:active {color:#202020;} 
+
+a.copyright {font: 90% 'mplus-1m-regular-webfont', Open Sans, arial, sans-serif;} 
+a.copyright:link {text-decoration:none;color:#A7A9AC;}  /* light gray. Previously dark gold, #C09841, gray #7F7A71 */
+a.copyright:visited {color:#A7A9AC;}
+a.copyright:hover {color:#D4A50F;}   /* gold yellow */
+a.copyright:active {color:#A7A9AC;}
+
+a.offwhite:link {text-decoration:none;color:#FFFBF7;}  /* off white */
+a.offwhite:visited {color:#FFFBF7;}
+a.offwhite:hover {color:#D4A50F;}  /* gold yellow */
+a.offwhite:active {color:#FFFBF7;}
+
+/* For the dialog links among the footerfortop navigation links */
+a#dialog-link3:link, a#dialogssi-link3:link {text-decoration:none;color:#C0C0C0;}  /* light gray */
+a#dialog-link3:visited, a#dialogssi-link3:visited {color:#C0C0C0;}
+a#dialog-link3:hover, a#dialogssi-link3:hover {color:#D4A50F;}   /*  gold yellow */
+a#dialog-link3:active, a#dialogssi-link3:active {color:#C0C0C0;}
+
+	
+/***********************************************************/
+/* Specific Divs */
+/***********************************************************/
+
+p#homepgshopnowbutton{ 
+	font:110% 'mplus-1m-regular-webfont', sans-serif;
+	position:absolute; 
+	left:42.6307%; 
+	top:72.85%;
+	padding:1% 4.754% 1% 4.754%; 
+	background-color:#FFFFFF; 
+	color:#88773F;
+	font-weight:normal;
+	z-index:1;
+}			
+span#more { font: bold 12px/18px 'mplus-1m-medium-webfont', Open Sans, sans-serif;} 
+
+#landingpagelayout img {border-style:solid; border-color:#FFFFFF; border-width:0px;}
+
+#landingpagelayout {
+	width:100%;  /* Resposive change (Previous: 1262px) */
+	             /* Resposive change (Previous: height: 671px) */
+	margin: 0 auto 0 auto;
+	padding: 0 auto 0 auto;
+}
+
+/* for landing page images that link to products */
+
+td.hmbannerimg { padding-bottom:0.3962%; }   /* 5/1262 = 0.3962%    Previous: 5px; */
+
+td.hmimgtoprod {
+	position:relative; 
+	padding-right:0.3962%;    /* 5/1262 = 0.3962%    Previous: 5px; */
+	width:28%;
+}
+
+td.hmimgtoprodacc {
+	position:relative; 
+	background-color:#D4A50F;
+	width:16%;
+}
+
+p#hmimgtoprod1, p#hmimgtoprod2, p#hmimgtoprod3, p#hmimgtoprod4 {
+	color:#FFFFFF; font-weight:normal; font-family:'mplus-1m-regular-webfont', sans-serif;
+}	
+
+p#hmimgtoprod1 { position:absolute; left:39.349%; top:43%; font-size:188%;} 
+p#hmimgtoprod2 { position:absolute; left:43.769%; top:43%; font-size:188%;} 
+p#hmimgtoprod3 { position:absolute; left:41.931%; top:43%; font-size:188%;}
+p#hmimgtoprod4 { position:absolute; left:22.335%; top:49%; font-size:131%;}
+
+
+
+/*****************************************************************************************************/
+/* Shopping Landing & Search Results Page Styles */
+/*****************************************************************************************************/
+
+#bottomcontainer {
+	background-color:#fff; 
+	margin:0px;
+	padding:20px 0 0 0;
+}
+
+#bottom, #bottomsr {
+	width: 93.107%;
+	margin: 0 auto 0 auto;
+	padding: 0 auto 0 auto;
+	position:relative;
+}	
+
+#introsection p {  /* Shopping Landing Page Only */
+	font: 14px 'mplus-1m-regular-webfont', Open Sans, arial, sans-serif;
+	line-height: 1.5;
+	color: #5F5A51; 
+}
+
+
+/* Catalog query results, etc. */
+
+#grpquery {
+	width:100%;
+}
+
+div#grpquery-ss {  /* side menu and banner for smaller screen sizes hidden until screen gets small */
+	display:none;
+}
+
+#grpname {
+	width:100%; text-align:center; padding-bottom:20px;
+	font:20px/22px 'mplus-1m-medium-webfont', Open Sans,sans-serif;
+	font-weight:bold;
+	color:#D4A50F;
+}
+
+#grpname h1 
+{
+	font:20px/22px 'mplus-1m-medium-webfont', Open Sans,sans-serif;
+	font-weight:bold;
+	color:#202020; 
+	display:inline;
+} 
+
+#grplist {
+	float:left; width:15.92%; padding-bottom:20px; 
+}
+
+#grpbanner {
+	float:left; width:83.08%; padding-bottom:40px;
+}
+
+#grpresults {
+	clear:both;
+}
+
+#grpfilter {
+	margin-left:15.92%; width:84.08%; clear:both; 
+}
+
+#grppagination {
+	margin-left:1.7%; width:98.3%; 
+}
+
+#grpresults-tdl {
+	width:14.133%;
+}
+
+#grpresults-tdr {
+	width:85.867%;
+}
+
+#grp4cols {
+	display:block;
+}
+
+#grp3cols {
+	display:none;
+}
+
+#grp2cols {
+	display:none;
+}
+
+#grp1col {
+	display:none;
+}
+
+
+/* The columns and their spacer columns (in results-responsive.php) where the products are displayed */
+#tdcols {
+	width:91.5%;
+}
+
+#tdcolspace {
+	width:8.5%;
+}
+
+#divcols {
+	max-width:100%;  /* Resides inside #tdcols */
+	margin-top:5%;
+}
+
+#prodimagediv {
+	width:96.7%;  /* Resides inside #tdcols */
+}
+
+#prodnamediv {
+	width:96.7%;  /* Resides inside #tdcols */
+	margin-top:3%;
+	height:70px;
+}
+
+#prodname {
+	line-height:normal;  /* Resides inside #tdcols */
+}
+
+img#productlistimg {
+	width:100%; max-width:420px; height:auto;
+}
+
+#rightdiv p { 
+	font: 14px 'mplus-1m-regular-webfont', Open Sans, arial, sans-serif;
+	line-height: 1.5;
+	color: #5F5A51; 
+}	
+
+p.price {
+	font: 14px 'mplus-1m-regular-webfont', Open Sans, arial, sans-serif;
+	line-height: 1.5;
+	color: #C00000; /* Maroon */
+}
+
+#introsection {
+	width: 694px;
+	margin: 0 20px 20px 0;
+	padding: 20px 27px 20px 27px;
+	background-color:#FFFFFF;
+}	
+
+#featuredsection {
+	width: 721px;
+	height: 960px;
+	margin: 0 20px 20px 0;
+	padding: 20px 0 20px 27px;
+	background-color:#FFFFFF;
+}	
+
+#resultssection { /* Search Results Page */
+	width: 860px;
+	height: 1130px;
+	padding: 20px 0 20px 20px;
+	margin-left:30px;
+	background-color:#FFFFFF;
+}
+
+#selector { /* Search Results Page */
+	width: 90%;
+	height: 1130px;
+	padding: 20px 20px 20px 20px;
+	background-color:#FFFFFF;
+}
+
+#introsection img { padding:0 187px 20px 187px; }
+img#f1 { padding:0 244.5px 20px 244.5px; }
+img#pt1 { padding:0 53px 20px 53px; }
+img#pt2 { padding:0 135px 20px 135px; }
+
+
+#selectorheader1 {  /* Results Page */
+	height:40px;
+	border-style:solid;
+	border-color:#C9BFAC;  /* light fortnum color */
+	border-width: 0 0 thin 0;
+	margin: 0 10px 20px 10px;
+}
+
+#resultheader2 {  /* Results Page */
+	height:40px;
+	border-style:solid;
+	border-width:1px;
+	border-style:solid;
+	border-color:#C9BFAC;  /*  light fortnum color */
+	border-width: 0 0 thin 0;
+	/* the left empty "td" of the results section is 20% of a third of the 811px table width, which is 54.06px */
+	/* 54.06/811 = 6.666% */
+	margin: 0 0 20px 6.666%; 	
+}
+
+#resultheader2m {  /* Mobile Results Page */
+	height:40px;
+	border-style:solid;
+	border-width:1px;
+	border-style:solid;
+	border-color:#C9BFAC;  /*  light fortnum color */
+	border-width: 0 0 thin 0;
+	/* the left empty "td" of the results section is 20% of a third of the 811px table width, which is 54.06px */
+	/* 54.06/811 = 6.666% */
+	margin: 0 0 10px 0; 	
+}
+
+#selectorheader1 h1, #resultheader2 h1 {  /* Results Page */
+	line-height: 1.5;	
+}
+
+/*
+#introsection img, #featuredsection img, #rightdiv img {
+	padding:20 187 20 187;
+}
+*/
+#producttype1, #producttype2 {
+	width: 362px;
+	margin: 0 20px 20px 0;
+	padding: 20px;
+	border-style:solid;
+	border-color:#C9BFAC;
+	border-width:thin;
+}
+
+#leftdiv {  /* for home and shopping landing pages */
+	height:1100px;
+	width:770px;  /* LeftDiv + RightDiv must not exceed div bottom, which is 92% of div wrapper */
+	float:left;
+}
+
+#rightdiv { /* for home and shopping landing pages */
+	height:1100px;
+	width:402px;
+	float:right;
+}
+
+#leftdivsr { /* for search results pages */
+	height:1270px;
+	width:263px;  /* LeftDivSR + RightDivSR must not exceed div bottom, which is 92% of div wrapper */
+	float:left;
+}
+
+#rightdivsr { /* for search results pages */
+	height:1270px;
+	width:909px;
+	float:right;
+}
+
+.fs div { 
+float:left; 
+padding:0 26px 20px 0;
+}
+
+
+
+.fs h3, resultssection h3 {
+	font: 13px 'mplus-1m-regular-webfont', Open Sans, arial, sans-serif; font-weight:bold;
+	line-height:25px;
+	color: #202020; 
+}
+
+a#productname {
+	font-weight:bold;
+	font-family:'mplus-1m-medium-webfont', Open Sans, arial, sans-serif;
+}
+
+#rightdiv p { padding: 20px 0 20px 0; width:362px; }
+
+/*
+#button1  span { border-style:solid; border-width:1px; border-color:#88773F;}
+#button1  span a { padding:8px; }
+#button1  a:link { color:#88773F; background-color:#FFFFFF; }
+#button1  a:visited { color:#88773F; background-color:#FFFFFF; }
+#button1  a:active { color:#88773F; background-color:#FFFFFF; }
+#button1  a:hover { color:#88773F; background-color:##C0AD6A }
+*/
+
+span.button { 
+	background-color:#FFFFFF;
+	color:#88773F; 
+	font-size:14px; 
+	padding:8px; 
+	margin-top:10px; 
+	border-style:solid;
+	border-width:1px;
+	border-color:#88773F; 
+}
+
+span.buttonmorepadding { 
+	background-color:#FFFFFF;
+	color:#88773F; 
+	font-size:14px; 
+	padding:8px 30px 8px 30px; 
+	margin-top:10px; 
+	border-style:solid;
+	border-width:1px;
+	border-color:#88773F; 
+}
+
+span.buttondark { 
+	background-color:#C09841;  /* Light fortnum gold */
+	color:#FFFFFF; 
+	font-size:14px; 
+	padding: 10px;  
+}
+
+
+
+td.topleft-aligned
+{
+text-align:left;
+vertical-align:top;
+}
+
+td.topright-aligned
+{
+text-align:right;
+vertical-align:top;
+}
+
+td.topcenter-aligned
+{
+text-align:center;
+vertical-align:top;
+}
+
+td.bottomcenter
+{
+text-align:center;
+vertical-align:bottom;
+}
+
+td.categories
+{
+text-align:left;
+vertical-align:top;
+font-size:12px;
+line-height:10px;
+font-weight:normal;
+padding: 10px;
+}
+
+span.categoryheader
+{
+font-weight:bold;
+font-family:'mplus-1m-medium-webfont', Open Sans, arial, sans-serif;
+}
+
+p#redtext, span#redtext
+{
+color:#FF0000;
+line-height:10px;
+}
+
+span#medgray
+{
+font:12px/13px 'mplus-1m-regular-webfont', Open Sans,verdana,arial,sans-serif;
+font-weight:normal;
+color:#808080;  
+}
+
+p#smallgray, span#smallgray
+{
+font:10px 'mplus-1m-regular-webfont', Open Sans,verdana,arial,sans-serif;
+line-height: 100%; 
+font-weight:normal;
+color:#808080;  
+}
+
+span, p
+{
+	font-size:14px;
+}
+
+
+div#clicktofilter {
+	width:100%;
+	padding:7px 0 10px 0;
+	margin:0 0 20px 0;
+	text-align: center;
+	background-color:#ECE9E4; /* Light Gray */
+}
+
+div#separatorline {
+	margin:20px 0 20px 0;border-style:solid; border-color:#ECE9E4; border-width:0 0 1px 0;
+}
+
+img#productimg_mb { width:100%;	max-width:400px; height:auto; }
+
+td#productimgtd_mb { text-align: center; }
+
+div#productimgdiv_mb { text-align: left;}
+
+div#navheader { height: 40px;}
+
+
+/* Style for Selection Box Area*/
+
+.styled-select {
+	float:left;
+	margin-right:1%;
+	margin-bottom:20px;
+}
+
+
+#submitfilter {
+	float:left;
+	margin:4px 0 20px 0;
+}
+
+#productcount {
+	float:right;
+	margin-bottom:20px;
+}
+
+
+
+/***********************************************************/
+/* Item Details Page */
+/***********************************************************/	
+
+#itemdetailssection { 
+	width: 100%; /* PREVIOUS (1101px): 1101+30+30 = 1161 -> to match div bottom, which is 92% of div wrapper  previous 1132px*/
+	padding: 1.5% 0;  /* PREVIOUS (2.584%, 30px) */
+	height: 100%;
+	min-height:700px;
+}
+
+div#idmtvw {
+	width:7%; 
+	margin-right:3%; 
+	display:inline; 
+	float:left;
+}
+
+.cart, .cart th, .cart td {
+	border: 1px solid #EEEEEE;
+}	
+
+.cart td {
+	padding:8px;
+}
+
+				
+
+/******************************************************************************/
+/* New Responsive Item Detail Styles 
+/******************************************************************************/
+
+	#itemdetailssection-idp { 
+	width: 100%; /* PREVIOUS (1101px): 1101+30+30 = 1161 -> to match div bottom, which is 92% of div wrapper  previous 1132px*/
+	padding: 1.5% 0;  /* PREVIOUS (2.584%, 30px) */
+	height: 100%;
+	min-height:800px;
+}
+
+	#prodviews { height:700px; width:48%; margin-right:3%; display:inline; float:left; /*background-color:purple;*/ }  /* 540/1175 => based on my screen's itemdetailssection's width of 1175px */
+		#thumbnails { height:780px; width:14.8%; margin-right:4%; display:inline; float:left; /*background-color:green;*/ }  /* 80/540  */
+		#imgshown { height:780px; width:81.2%; display:inline; float:left; /*background-color:yellow;*/ } /* 441/540 */
+		
+	#prodinfocontainer { height:630px; width:49%; display:inline; float:left; /*background-color:orange;*/ }  /* 560/1175 */
+		#prodtitlearea { height:90px; width:300px; display:block; /*background-color:red;*/ }
+		#prodbuttonarea { height:60px; width:83%; display:block; /*background-color:blue;*/ }  /* 478px */
+		#prodinfoarea { height:400px; width:98%; display:block; /*background-color:gray;*/ }  /* 550/560 */
+		
+		#prodtitlearea_ss { display:none; } /* hide the prodtitlearea for small screens until screen size is smaller */
+		
+	#prodadded { clear:both; margin:15px 0; }	
+	
+/* Responsive Designer and Product Detail Styles */
+	div#dd1 { width:100%; margin-bottom:20px; }
+	div#dd2 { width:71%;float:left;margin-right:2%; }
+	div#dd3 { width:25%;float:left;margin-left:1.5%; }
+	div#dd4 { width:100%;clear:both; }
+	div#dd5 { width:100%; }
+	tr.ddhighlights,tr.idthighlights { height:50px; }
+	
+	div#idt1 { width:100%; }
+	div#idt2 { width:40%; float:left; }  /* Previous, width:31% */
+	div#idt3 { width:50%; float:left; }  /* Previous, width:43% */
+	/* div#idt4 { width:26%; float:left; }
+	   div#idt5 { width:100%; clear:both; } */
+	div#idt6 { padding:25px 0; clear:both; }	/* Just added  clear:both; */
+	
+	div#idtthumb { width:7%; margin-right:2%; display:inline; float:left; }
+	div#idtprodviews {  }
+	
+	td#flexidttd1 { width:93.5%; }
+	td#flexidttd2 { width:6.5%; }
+	td#flexidttd3 { width:94%; }
+	td#flexidttd4 { width:3%; }
+	td#flexidttd5 { width:3.4%; }
+	
+	h1#idtx1 { padding-bottom:10px; font-size:22px; }
+	h1#idtx2 { font:16px 'mplus-1m-medium-webfont', Open Sans,sans-serif; padding:0; display:inline; }
+	h1#idtx3 { margin:20px 0 15px 0; clear:both; }
+	h1#idtx6 { color:#D4A50F;padding:0 0 10px 0; font:15px 'mplus-1m-medium-webfont', Open Sans,sans-serif; }
+	
+	span#idnum1 {font:13px 'mplus-1m-regular-webfont', Open Sans,sans-serif; padding:6px 0 0 50px;}
+	
+	img#producttmb {   /* product image thumbnails */
+		margin-bottom:20px; 
+		height:115px; width:75px
+	}
+	
+	
+	h1#idtx1mb { padding:20px 0; display:none; color:#D4A50F; }  /* display only for mobile */
+	
+	/* Product Selection and Description Tabs in the Product Details Page */
+	
+	#navbar {
+		 /* width:100%;588px; */
+		margin-top:28px;
+	}
+	
+	#navbar #holder {
+		border-bottom:1px solid #C0C0C0;
+		width:97.5%; /* 588px; */
+		padding-left:0;
+		height:43px;
+	}
+	
+	#navbar #holder ul {
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+	
+	
+	a.asel, a.adesc {
+		text-decoration:none;
+		float:left;
+		margin-right:0;		
+		font-family: 'mplus-1m-medium-webfont', Open Sans,sans-serif;
+		text-align:left;
+		display:block; /* so that even though we're setting the style for "a", 
+					      we want the effect to apply to the entire li block */
+		background-color:#F6F6DC;
+	}
+	
+	a.asel {
+		border-style:solid; border-color:#C0C0C0; border-width:1px 1px 0 1px;
+		padding:8px 41px;
+	}
+	
+	a.adesc {
+		border-style:solid; border-color:#C0C0C0; border-width:1px 1px 0 0;
+		padding:8px 30px;
+	}
+	
+	#navbar #holder ul li a:hover {
+		background-color:#F8F99F;
+		color:#202020;
+		/* text-shadow:1px 1px 1px #000; */
+	}
+	
+	#holder ul li a#onlink {
+		background-color:#FFF;
+		font-family: 'mplus-1m-medium-webfont', Open Sans,sans-serif;
+		color:red;
+		border-bottom:1px solid #FFF;
+	}
+	
+	#holder ul li a#onlink:hover {
+		background-color:#FFF;
+		color:#D4A50F;
+		/* text-shadow:1px 1px 1px #000; */
+	}
+	
+	#idtcontent {
+		border:1px solid #C0C0C0;
+		border-top:none;
+		padding:20px;
+		min-height:300px;
+		width:90%;
+	}
+
+				
+				
+				
+				
+				
+				
+/***********************************************************/
+/* Headers */
+/***********************************************************/	
+h1 
+{
+font:18px/22px 'mplus-1m-medium-webfont', Open Sans,sans-serif;
+font-weight:bold;
+color:#202020;  
+} 
+
+h2 
+{
+font:16px/22px 'mplus-1m-regular-webfont', Open Sans,sans-serif;
+font-weight:normal;
+color:#202020;  
+} 
+
+
+h2.gold yellow {
+	font-family:'mplus-1m-medium-webfont', arial narrow,tahoma;
+	font-weight:bold; 
+	font-size:20px; 
+	color:#D4A50F;
+}
+
+h2.gold yellowwide {
+	font-family:'mplus-1m-medium-webfont', Open Sans,verdana,arial,sans-serif;
+	font-weight:bold; 
+	font-size:20px; 
+	color:#D4A50F;
+}
+		
+h3 
+{
+font:16px/22px 'mplus-1m-medium-webfont', Open Sans,sans-serif;
+font-weight:bold;
+color:#202020;  /* dark gray */
+} 
+	
+h4  
+{
+font:16px/22px 'mplus-1m-regular-webfont', Open Sans,sans-serif;
+font-weight:normal;
+color:#C09841;  /* Gold. Used for price display in the item details page */
+} 
+
+h5
+{
+font:20px/10px 'mplus-1m-regular-webfont', Open Sans,arial,sans-serif;
+font-weight:normal;
+color:#D4A50F;   /* gold yellow */
+}
+
+h6
+{
+font:17px/10px 'mplus-1m-regular-webfont', Open Sans,arial,sans-serif;
+font-weight:normal;
+color:#C09841;   /* orange / used on the log in page */
+}
+	
+header {
+	padding-top: 20px;
+	height: 87px;
+}
+
+/***********************************************************/
+/* Navigation */
+/***********************************************************/
+#topnavcontainer {
+	height:100%;
+	float: right;
+	position:relative;
+}
+
+#topnav1 {
+	height:61px;
+}
+
+#topnav2 {
+	height:36px;
+}
+
+#topnav1  ul {
+	text-align:right;
+	position:relative;
+	bottom:-3px;
+}
+
+#topnav1  ul li {
+	display:inline; 
+}
+
+#topnav1  ul li a {
+	padding:10px; 
+	vertical-align: bottom;
+}
+
+
+/****************************/
+/* FooterTall */
+/****************************/
+
+h4.footerheader  
+{
+/* font:22px/24px 'mplus-1m-regular-webfont', Open Sans,sans-serif;    Commented out and moved up to the media query section */
+font-weight:normal;
+/* color:#f8f3f0;   off white / used in footer section MOVED TO MEDIA QUERY SECTION */
+}
+
+div.bottomnavcontainercolor
+{
+width:100%;
+min-height:225px;
+max-height:100%;
+margin:0px;
+/* background-color:#262626;  Moved to the media query section near top */
+border-style:solid; border-color:#fff; border-width:0 0 0 0;  /* Previous:  border-width:5px 0 0 0; */
+margin-top: 0.4%;
+}
+		
+	div.bottomnavcontainer
+	{
+	width:93.106%;
+	padding-top:25px;
+	padding-bottom:25px;
+	margin-right:auto;
+	margin-left:auto;
+	/* background-color:#262626;  Moved to the media query section near top */
+	}
+
+		div.bottommenus
+		{
+		width:100%; /* Previous: 900px */
+		float:left;
+		}
+
+
+div.privacycontainercolor
+{
+width:100%;
+height:50px;
+margin:0px;
+border:solid; border-color:#ECE9E4; border-width:1px 0 0 0;
+/* background-color:#8C7E71; */
+}
+	
+div.privacycontainer
+{
+width:93.106%;
+height:50px;
+margin-right:auto;
+margin-left:auto;
+}
+
+	div.privacy
+	{
+	width:100%;
+	height:50px;
+	}	
+
+	
+#social2 {
+	/* float:right;    Commented out as float right no longer needed since the Social icons will now go in a div below the footer nav menus */
+	width:100%; /* Previous: 267px */
+	Clear:both;  /* Because the Social icons will now go in a div below the footer nav menus */
+	padding-top:20px;
+}
+
+#social2  ul {
+	text-align:center;
+}
+
+#social2  ul li {
+	display:inline; 
+}
+
+#social2  ul li a {
+/*	padding:0 15px 0 15px;  Moved to the media query section near top */
+}
+
+
+
+	
+#social3 {
+	float:left;
+	/* background-color:green; */
+}
+
+#social3  ul li {
+	display:inline;
+}
+
+#social3  ul li a {
+	padding-left:20px; 
+}
+
+
+
+	
+	/******************************************************************************/
+	/* Footer navigation for screen width 1150px or lower */
+	/******************************************************************************/
+	
+	#social2  ul li a {
+		padding:0 15px 0 15px;
+	}
+	
+	img.footersocial {
+		width:6%;
+		min-width:40px;
+		height:auto; 
+	}
+	
+	div.bottomnavcontainercolor {
+		display:none;
+	}
+	
+	h4.footerheader  
+	{
+	font:22px/24px 'mplus-1m-regular-webfont', Open Sans,sans-serif;
+	color:#ffffff;  /* Previous: #f8f3f0; */
+	}
+	
+	a.bottommenu:link {text-decoration:none;color:#ffffff;}  /* Previous #C0C0C0  light gray. */ 
+	a.bottommenu:visited {color:#ffffff;}
+	a.bottommenu:hover {color:#D4A50F;}   /* gold yellow */
+	a.bottommenu:active {color:#ffffff;} 
+
+
+	
+	/*****************************************************************************************************
+	Simple Menus:
+		- nav-menu-container is for the narrower-screen navigation links that have no drop-downs
+		(megamenucontainer below this one is for the wider-screen navigation links that 
+		displays drop-down links on mouse-over)
+	******************************************************************************************************/
+	
+	/* Nav Menu (simple menu, with no drop-downs) */
+	div.nav-menu-container {
+		display:none;
+	}
+	
+	div.nav-menu, div.nav-menu-il { /* nav-menu is for menus stacked vertically (home page); nav-menu-il is menus lined horizontally (other pages) */
+		display:none;
+		padding: 0;
+	}
+
+	div.nav-menu ul, div.nav-menu-il ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	div.nav-menu ul li, div.nav-menu-il ul li {
+		list-style: none;
+		float: left;
+	}
+
+	div.nav-menu ul li a:link, div.nav-menu-il ul li a:link,
+	div.nav-menu ul li a:visited, div.nav-menu-il ul li a:visited {
+		display: block;
+		font-size: 85%;
+		padding: 10px 20px 10px 10px;
+		color: #202020; /* Previous: #007CA5; */
+		text-decoration: none;
+	}
+	
+	
+	#moredropdown { float:right; margin-right:20px; }
+
+	#moredropdown ul {
+	  display: inline; 
+	}
+	
+	li#m9, li#m10, li#m11, li#m12 { 
+		display:none; 
+	}
+	
+/*****************************************************************************************************/
+/* Styles for mega menu */
+/*****************************************************************************************************/
+
+	
+#contactinfo {float:left; margin-top:13px; margin-bottom:7px; position:absolute; left:10px; top:13px;}
+
+#megamenucontainer_shopping {   /* This is to allow the centering of the ul (class="nav") element */
+	margin-top:28px;
+	margin-left:52px;	/* Before Event & Boutique Hiding, this was not here */
+	display:inline;
+	float:left;
+}	
+
+/* Source: http://designmodo.com/create-css3-mega-menu/ */
+
+/* CSS Reset */
+.nav,
+.nav a,
+.nav ul,
+.nav li,
+.nav div,
+.nav form,
+.nav input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+ 
+.nav a { text-decoration: none; }
+ 
+.nav li { list-style: none; }
+
+
+/* Styles for the Menu Container 
+We add some basic styles to the menu container and float the list items to the 
+left in order to show them on the same line.
+*/
+.nav {
+    display: inline-block;
+    position: relative;
+    cursor: default;
+    z-index: 500;
+}
+ 
+.nav > li {
+    display: block;
+    float: left;
+}
+
+/* Menu Links - Common Styles
+Styling the Menu Links
+
+We will start with the common styles like padding, height, position, etc. Then we’ll 
+set the typography styles such as font size, color, text shadow, etc. We’ll also set 
+a background color and a left and right border. To keep the styles transitions smooth 
+we’ll add a CSS3 transition. Note that we set the same property five times, this is 
+required because this property is not fully implemented in all browsers yet, and as 
+this property is on testing, all the different browsers use a prefix before the property. 
+So if you want to support some current and older browsers use this prefixes.
+*/
+.nav > li > a {
+    position: relative;
+    display: block;
+    z-index: 510; 
+	padding: 0 26px 0 26px;  /* Before Event & Boutique Hiding: 0 16px 0 16px; */
+	
+ 
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+/* Menu Links - Hover
+For the hover state we will only change the background color. To finish the menu links 
+styling we will add rounded corners to the first link using the :first-child pseudo 
+selector and remove the left border.
+*/
+.nav > li:hover > a { background: #FFFFFF; /* border-style:solid; border-color:#C9BFAC; border-width: thin;  light fortnum color */ }
+
+img.newtopmenu { vertical-align:middle; }
+
+/*
+The Mega Dropdowns
+
+This is one of the most important parts. We will start by setting the position 
+to absolute, width to 100%, display to block and the top and left values. Then 
+we will hide the dropdowns using the opacity, visibility and overflow properties. 
+After that we will add a background color, rounded corners and some transitions. 
+The reason we will be using this three properties to hide the dropdowns and not 
+the display: none; is because if we use display: none; the transitions won’t work.
+*/
+.nav > li > div {
+    position: absolute;
+    display: block;
+    top: 23px;
+ 
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+ 
+    background: #FFFFFF;
+    border-radius: 0 0 3px 3px;
+	
+	border-style:solid; border-color:#C9BFAC; border-width: thin; border-top-width:0px; /* light fortnum color */
+ 
+    -webkit-transition: all .3s ease .15s;
+    -moz-transition: all .3s ease .15s;
+    -o-transition: all .3s ease .15s;
+    -ms-transition: all .3s ease .15s;
+    transition: all .3s ease .15s;
+}
+
+/*  Before Event & Boutique Hiding
+.nav > li > div.nav-column1s { left: -1px; width: 520px; }  /* shopping pages 
+.nav > li > div.nav-column2s { left: 103px; width: 480px; }
+.nav > li > div.nav-column3s { left: 175px; width: 480px; }
+.nav > li > div.nav-column4s { left: 231px; width: 480px; }
+.nav > li > div.nav-column5s { left: 295px; width: 380px; }
+*/
+
+.nav > li > div.nav-column1s { left: -1px; width: 520px; }  /* shopping pages */
+.nav > li > div.nav-column2s { left: 123px; width: 480px; }
+.nav > li > div.nav-column3s { left: 215px; width: 480px; }
+.nav > li > div.nav-column4s { left: 291px; width: 480px; }
+.nav > li > div.nav-column5s { left: 375px; width: 380px; }
+
+
+div.navcoldiv { float:left; padding:0 20px 20px 20px; }
+div.navcoldiv h2 { line-height: 60px; }
+
+@media screen and (max-width:550px) {  /* for the column text alignment in designrnav.php, in mobile screens. We want to move it left */
+	div.navcoldiv { padding:0 20px 20px 0; }	
+}
+
+/*
+To show the dropdowns on hover we need to set the opacity to 1 and the visibility 
+and overflow properties to visible.
+*/
+.nav > li:hover > div {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+}
+
+
+/*
+Adding Some Basic Styles to the Content of the Divs of the Mega Menu
+
+We’ll set the width of each column to be 20%, the padding 2.5% and float 
+the columns to the left. To finish we will add some typography styles 
+for the heading and links.
+*/
+.nav .nav-column {
+    float: left;
+    width: 95%;
+    padding: 2.5%;
+}
+ 
+.nav .nav-column h3 {
+    margin: 20px 0 10px 0;
+    line-height: 18px;
+ 
+    font-family: 'mplus-1m-medium-webfont', Open Sans, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #372f2b;
+    text-transform: uppercase;
+}
+ 
+.nav .nav-column h3.orange { color: #D4A50F; }
+ 
+.nav .nav-column li a {
+    display: block;
+    line-height: 26px;
+ 
+    font-family: 'mplus-1m-medium-webfont', Open Sans, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #888888;
+}
+ 
+.nav .nav-column li a:hover { color: #666666; }
+
+
+/* for the "More" drop-down at top of pages */
+
+.nav > li > div.nav-columnmore { left: -634px; width: 700px; border-style:solid; border-width: 0px; position: absolute; top: 19px;}  
+
+/* #moredropdown { float:right; margin-right:20px; }   Moved to the media query section */
+
+#moredropdown ul {
+  /* display: inline;   Moved to the media query section */
+  color: #eee;
+}
+
+span.promoline {
+  font: bold 12px/18px 'mplus-1m-medium-webfont', Open Sans, sans-serif;
+  color: #D4A50F;
+  height:24px;
+  vertical-align: middle;
+  position:relative; bottom:-4px;
+  padding:10px;
+}
+
+
+
+img#arrow { 	
+	padding: 5px 10px; 
+}
+
+
+
+/*****************************************************************************************************/
+/* Styles for checkout pages */
+/*****************************************************************************************************/
+
+	p.formlegal {  /* in checkout_reg.php page */
+		width: 100%;
+		padding: 0 0;  /* top/bottom  right/left */
+		text-align:center;
+		margin: 0 auto;  /* top/bottom  right/left */
+		font-size: 80%;
+	}
+
+	/* Sign Up Form Displayed */
+	#chkt_lhs {
+		width:35%;
+		float:left;
+	}
+	
+	#chkt_rhs {
+		width:65%;
+		float:right;
+	}
+	
+	/* Registration Form Displayed */
+	#chktrg_lhs {
+		width:45%;
+		float:left;
+	}
+	
+	#chktrg_rhs {
+		width:55%;
+		float:right;
+	}
+	
+	/* Shipping Form Displayed */
+	#chktsh_lhs {
+		width:45%;
+		float:left;
+	}
+	
+	#chktsh_rhs {
+		width:55%;
+		float:right;
+	}
+	
+		/* Payment Page */
+	#chktpmt_lhs {
+		width:45%;
+		float:left;
+	}
+	
+	#chktpmt_rhs {
+		width:55%;
+		float:right;
+	}
+	
+	/* Submit Page */
+	#chktrv_lhs {
+		width:47%;
+		float:left;
+	}
+	
+	#chktrv_rhs {
+		width:47%;
+		float:right;
+	}
+	
+	/* Breadcrumbs Styling*/
+	
+	/* div#chkhdrdiv { 	}   */
+	
+	h1.chkhdr {
+		font-size:150%; margin:20px 0 30px 0;
+	}
+	
+	div#chkbrcrumbs {
+		width:100%;
+		height:50px;
+		margin:30px 0;
+	}
+	
+	div.chkbrcrumbs_step {
+		width:24.355%; height:50px;	margin-right:0.65%; display:inline; float:left; background-color:#F9F9F9;
+		border: 1px solid #EEEEEE;
+	}
+	
+	div.chkbrcrumbs_lstep {
+		width:24%; height:50px;	display:inline; float:left; background-color:#F9F9F9;
+		border: 1px solid #EEEEEE;
+	}
+	
+	div#currentstep {
+		background-color:#F1F1CF;  /* Prev:#8BE442: light green. #B8B6B6: light gray */
+	}
+	
+	h4.currentsteplabel { 
+		margin:15px 0 0 10px; 
+		color:#FB5100;
+	}
+	
+	h4.chksteplabel { 
+		margin:15px 0 0 10px; 
+		color:#C0C0C0;
+	}
+	
+	
+	div#fix_expand {
+		/* In paymtincl.php, the div id="itemdetailssection" is unable to expand to 
+		accomodate increased height from taller order summary (shopping cart). This is to hard-code in a tall div */
+				
+		width: 100%;
+		padding: 1.5% 0;
+		height: 100%;
+		min-height:1400px;
+	}
+	
+}
+	
+	/* Payment Page - Credit Card Form */
+	
+	div.form-row { margin-bottom:10px; width:340px;}
+	
+	div.pymt-label { display:inline; float:left; width:160px;}
+	
+	div.pymt-input { display:inline; float:right; width:160px;}
+
+	
+	
+	
+/*****************************************************************************************************/
+/* Styles for search form appearing for smaller screens */
+/*****************************************************************************************************/
+
+	#tfheader2{
+		width:180px; /* .tftextinput42 + it's padding + .tfbutton42 */
+		margin-top:3px; 
+		margin-left:3%; /* with respect to the wrapper width of 1262px. Previous: 15px; */
+		display:none;
+		float:left;
+	}
+	
+	
+	.tftextinput42{
+		width:120px;
+		margin: 0;
+		padding: 4.2px 15px;
+		font-family: 'mplus-1m-regular-webfont', Arial, Helvetica, sans-serif;
+		font-size:12px;
+		color:#666;
+		border:0px solid #B4B0B0; border-right:0px;	 /* thin border was previously set as "border:1px solid #B4B0B0; border-right:0px;"  */
+	}
+	.tfbutton42 {
+		margin: 0;
+		padding: 0;
+		width:21px; /* Previous: 30px; */
+		height:21px;  /* Previous 30px; */
+		font-family: 'mplus-1m-medium-webfont', Arial, Helvetica, sans-serif;
+		font-size:13px;
+		font-weight:bold;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 0px #B4B0B0; border-left:0px;  /* thin border was previously set as "border: solid 0px #B4B0B0; border-left:0px;" */
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton42::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear2{
+		clear:both;
+	}
+	
+
+	 
+	/* Search button for mobile screens 500px or less */
+	#searchinmobile {
+	display:none;
+	}
+
+	
+	
+/*****************************************************************************************************/
+/* Styles for search form appearing for wider screens */
+/*****************************************************************************************************/
+
+	#tfheader{
+		width:180px; /* .tftextinput4 + it's padding + .tfbutton4 */
+		margin-top:23px; 
+		margin-left:1.2%; /* with respect to the wrapper width of 1262px. Previous: 15px; */
+		display:inline;
+		float:left;
+	}
+	.tftextinput4{
+		width:120px;
+		margin: 0;
+		padding: 4.2px 15px;
+		font-family: 'mplus-1m-regular-webfont', Arial, Helvetica, sans-serif;
+		font-size:12px;
+		color:#666;
+		border:0px solid #B4B0B0; border-right:0px;	 /* thin border was previously set as "border:1px solid #B4B0B0; border-right:0px;"  */
+	}
+	.tfbutton4 {
+		margin: 0;
+		padding: 0;
+		width:21px; /* Previous: 30px; */
+		height:21px;  /* Previous 30px; */
+		font-family: 'mplus-1m-medium-webfont', Arial, Helvetica, sans-serif;
+		font-size:13px;
+		font-weight:bold;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 0px #B4B0B0; border-left:0px;  /* thin border was previously set as "border: solid 0px #B4B0B0; border-left:0px;" */
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton4::-moz-focus-inner {
+		border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+
+
+
+/*************************************************
+Some miscellaneous styles for mobile landing page
+*************************************************/
+	
+a.mobilebanner, div.hmimgtoprodmobile {
+	display:none;
+}
+
+div#topr1,div#topr2,div#topr3,div#topr4 {  /* mobile landing page only */
+	margin-bottom:2px;
+    position: relative;
+}
+
+.mb-img-desc {
+	background: url("http://www.waxmode.com/responsive2/imagesnew/mb-img-bgrd.png") repeat scroll 0 0 transparent;
+    left: 0;
+    padding: 0 15px 0 15px;
+    position: absolute;
+    bottom: 15%;
+    max-width: 85%;
+	display:inline-block;
+}
+.mb-img-desc > h2 {
+    color: #D4A50F;
+    font: 'mplus-1m-medium-webfont', Open Sans, sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.mb-img-desc > p {
+    color: #FFFFFF;
+    font: 'mplus-1m-medium-webfont', Open Sans, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+.mb-img-desc > p a.more {
+    color:#CFDB0C;
+	font-size:16px;
+	text-decoration:none;
+}
+.mb-img-desc > p a.more:hover {
+text-decoration:underline;
+}
+
+	
+
+
+	
+/******************************************************************************* 
+Styles for radio buttons in product details page	
+
+Hide radio button (the round disc)
+we will use just the label to create pushbutton effect
+*******************************************************************************/
+
+input[type=radio].shpmtd {
+    display:inline-block; 
+}
+
+input[type=radio] {
+    display:none; 
+}
+ 
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+  
+  Radio Buttons for Color
+*/
+input[type=radio]#radioc1 + label, input[type=radio]#radioc2 + label, input[type=radio]#radioc3 + label,
+input[type=radio]#radioc4 + label, input[type=radio]#radioc5 + label, input[type=radio]#radioc6 + label, 
+input[type=radio]#radioc7 + label, input[type=radio]#radioc8 + label, input[type=radio]#radioc9 + label {
+    display:inline-block;
+    margin:-2px;
+    padding: 2px 0;
+	width:45px;
+	text-align:center;
+	color:#FFFFFF;
+    border-style:solid; border-width:2px; 
+    margin-right:7px;
+}
+
+input[type=radio]#radioc5 + label, input[type=radio]#radioc9 + label {
+	color:#202020;
+}
+/*
+ Change background color for label next to checked radio button
+ to make it look like highlighted button
+*/ 
+input[type=radio]#radioc1:checked + label, input[type=radio]#radioc2:checked + label, input[type=radio]#radioc3:checked + label,
+input[type=radio]#radioc4:checked + label, input[type=radio]#radioc5:checked + label, input[type=radio]#radioc6:checked + label, 
+input[type=radio]#radioc7:checked + label, input[type=radio]#radioc8:checked + label, input[type=radio]#radioc9:checked + label {
+   background-image: none;
+   border-style:solid; border-color:#000000; border-width:2px;
+   color:#FFFFFF;
+}
+
+input[type=radio]#radioc1 + label { background-color: #FF001E; border-color:#FF001E; }
+input[type=radio]#radioc1:checked + label { background-color:#FF001E; }
+
+input[type=radio]#radioc2 + label { background-color: #FF7C09; border-color:#FF7C09; }
+input[type=radio]#radioc2:checked + label { background-color:#FF7C09; }
+
+input[type=radio]#radioc3 + label { background-color: #4040FF; border-color:#4040FF; }
+input[type=radio]#radioc3:checked + label { background-color:#4040FF; }
+
+input[type=radio]#radioc4 + label { background-color: #C000C0; border-color:#C000C0; }
+input[type=radio]#radioc4:checked + label { background-color:#C000C0; }
+
+input[type=radio]#radioc5 + label { background-color: white; border-color:#C0C0C0; }
+input[type=radio]#radioc5:checked + label { background-color:white; color:#202020; }
+
+input[type=radio]#radioc6 + label { background-color: #00C054; border-color:#00C054; }
+input[type=radio]#radioc6:checked + label { background-color:#00C054; }
+
+input[type=radio]#radioc7 + label { background-color: #EDB509; border-color:#EDB509; }
+input[type=radio]#radioc7:checked + label { background-color:#EDB509; }
+
+input[type=radio]#radioc8 + label { background-color: #369FBC; border-color:#369FBC; }
+input[type=radio]#radioc8:checked + label { background-color:#369FBC; }
+
+input[type=radio]#radioc9 + label { background-color: #FDFACD; border-color:#FDFACD; }
+input[type=radio]#radioc9:checked + label { background-color:#FDFACD; color:#202020; }
+
+/* Radio Buttons for Size */
+input[type=radio]#radios1 + label, input[type=radio]#radios2 + label, input[type=radio]#radios3 + label,
+input[type=radio]#radios4 + label, input[type=radio]#radios5 + label, input[type=radio]#radios6 + label, 
+input[type=radio]#radios7 + label {
+    display:inline-block;
+    margin:-2px;
+    padding: 2px 0;
+	width:45px;
+	text-align:center;
+	color:#000000;
+    border-style:solid; border-width:2px; border-color:#C0C0C0; 
+	background-color: #D6D6D6; 
+    margin-right:7px;
+}
+ 
+input[type=radio]#radios1:checked + label, input[type=radio]#radios2:checked + label, input[type=radio]#radios3:checked + label,
+input[type=radio]#radios4:checked + label, input[type=radio]#radios5:checked + label, input[type=radio]#radios6:checked + label, 
+input[type=radio]#radios7:checked + label {
+   background-color: #808080;
+   color:#FFFFFF;
+   border-style:solid; border-width:2px; border-color:#FB5101;
+}
+
+
+
+
+/******************************************************************** 
+Sign in and Registration form Styles 
+(see the related stylesheet, jqueryvalidval.css, for the rest of the styles) 
+********************************************************************/
+
+#mywrap{ 
+width:650px;height:400px; padding:20px; margin:20px auto; position:relative; 
+border-style:solid; border-color:#DDDDDD; border-width:1px;
+}
+
+#mywrap_reg{ 
+width:650px;height:530px; padding:20px; margin:20px auto; position:relative; 
+border-style:solid; border-color:#DDDDDD; border-width:1px;
+}
+
+/* designer forms styling */
+
+#desform-lhs {
+	width:47.9%; float:left;
+}
+
+#desform-btw {
+	width:4.1%; float:left;
+}
+
+#desform-rhs {
+	width:47.9%; float:right;
+}
+
+#desregform {
+	width:62%; min-width:630px; margin-left:auto;margin-right:auto;
+}
+
+#desregform-small {  /* for smaller screen sizes */
+	margin-left:auto;margin-right:auto;
+	display:none;
+}
+
+
+
+
+/***************************************************************** 
+Contact Us Page 
+*****************************************************************/
+#contactusdiv {
+	 width:100%; min-width:290px; min-height:350px; clear:both; background-color:#F7F5F3;
+}
+
+
+#contactus_lhs {
+	width:39%; float:left;
+}
+
+#contactus_rhs {
+	width:57%; float:right;
+}
+
+#contactus_rhs_inner {
+	height:100%; min-width:290px; margin:0 0 30px 0;
+}
+
+.contactus-rows {
+	width:70%;height:28px;margin-bottom:0;
+}
+
+.contactus_input {
+	width:250px;
+}
+
+.contactus_tarea {
+	width:250px;
+}
+
+
+
+
+/***************************************************************** 
+Message Page Layout 
+*****************************************************************/
+#msgdiv {
+	 width:100%; min-width:290px; min-height:300px; background-color:#F7F5F3; padding-top:15px; margin-bottom:5px;
+}
+
+#msgdiv_inner {
+	width:50%; min-width:290px; height:100%; padding:20px 3%; margin-left:auto;margin-right:auto;
+}
+
+#msglink_lhs {
+	width:50%; float:left; 
+}
+
+#msglink_rhs {
+	width:50%; float:right; 
+}
+
+#msgdivb {
+	 width:100%; min-width:290px; min-height:125px; background-color:#ECE9E4;  /* Previous: #ECE9E4, #F7F5F3 */
+}
+
+	
+
+
+
+
+/**********************************************************************************
+***********************************************************************************
+	MEDIA QUERIES (For adjusting styles dynamically as screen width changes)
+***********************************************************************************
+***********************************************************************************/
+
+	
+@media screen and (max-width:1200px) {
+	
+	#signinicon{
+		border-style:solid; border-color:#B4B0B0; border-width:0;
+	}
+	#carticon{
+		border-style:solid; border-color:#B4B0B0; border-width:0;
+	}
+	#top {
+		width: 98%;  /* Increased the width for the "top" div from 92% to 98% to create more space for the menus */ 
+	}
+}
+
+@media screen and (max-width:1150px) {
+	span.toptoplinks {
+		display:inline;
+	}
+	#signinicon{
+		display:none;
+	}	
+
+	#moredropdown ul {   /* Hide the "More" dropdown so the top nav menu is no longer available */
+	  display: none; 
+	}
+
+	div.bottomnavcontainercolor {   /* Show the footer nav menu */
+		display:block;
+		background-color:#404040;
+		/* border:solid; border-color:#ECE9E4; border-width:0 0 1px 0;  */
+	}
+}
+
+@media screen and (max-width:1100px) {
+	#carticon{
+		display:none;
+	}
+}
+
+@media screen and (max-width:1050px) {
+	#tfheader{
+		display:none;
+	}
+	#tfheader2{
+		display:inline;
+	}
+	span.promoline{
+	display:none;
+	}
+	
+	div#dd2 { 
+	width:100%;float:none;margin-right:0%; margin-bottom:20px;
+	}
+	div#dd3 { 
+	width:100%;float:none;margin-left:0%; margin-bottom:20px;
+	}
+	div#dd4 {
+	border-style:solid; border-color:#CDCBCB; border-width:1px 0 1px 0;
+	}
+	tr.ddhighlights { 
+	height:30px; 
+	}
+}
+
+/* https://www.youtube.com/watch?v=fA1NW-T1QXc (Quentin Watt) */
+/* 641px - 959px ==> Tablets */
+/* 320px - 640px ==> Mobile Phones */
+
+@media screen and (max-width:960px) {
+
+	#prodviews { width:100%; max-width:600px; margin-bottom:30px; margin-left:5%; display:block; }
+	#prodinfocontainer { width:100%; margin-left:5%; max-width:600px; display:block; }
+	#itemdetailssection-idp { height:1500px; }  /* we increase the itemdetailssection div of the item details page to 1400px to accommodate the expansion */
+
+	#prodtitlearea { display:none; }	 /* Hide the product title area where it was for bigger screens, and display it at the top instead for smaller screens */
+	#prodtitlearea_ss { display:block; margin-left:5%; }	
+
+	div#idt2 { width:50%; float:left; }
+	div#idt3 { width:50%; float:left; }
+	
+	td#flexidttd3 { width:100%; }
+	td#flexidttd4 { width:0%; }
+	td#flexidttd5 { width:0%; }
+	
+	div#idt4 { width:100%; clear:both; padding:2% 0; background-color:#F9F7F7; margin-top:20px;}
+	img#idtln1 { display:none; }
+	h1#idtx4 { margin-top:10px; }
+	tr.idthighlights { height:40px;}
+	
+	table#idtt1 { width:50%; min-width:300px;}
+	td#idttd1 { width:16%; }
+	td#idttd2 { width:84%; }	
+	
+	
+	/* Contactus page divs */
+	#contactus_lhs {
+		width:100%;
+		float:none;
+	}
+	
+	#contactus_rhs {
+		width:100%;
+		float:none;
+	}
+	
+	#contactusdiv {
+		background-color:#FFFFFF;
+	}
+}
+
+
+/* Checkout Pages for Smaller Screens */
+@media screen and (max-width:880px)
+{
+
+/* Sign Up Form Displayed */
+	#chkt_lhs {
+		width:100%;
+		float:none; 
+		margin-bottom:20px;
+	}
+	
+	#chkt_rhs {
+		width:100%;
+		float:none;
+	}
+	
+	/* Registration Form Displayed */
+	#chktrg_lhs {
+		width:100%;
+		float:none;
+		margin-bottom:20px;
+	}
+	
+	#chktrg_rhs {
+		width:100%;
+		float:none;
+	}
+	
+	/* Shipping Form Displayed */
+	#chktsh_lhs {
+		width:100%;
+		float:none;
+		margin-bottom:20px;
+	}
+	
+	#chktsh_rhs {
+		width:100%;
+		float:none;
+	}
+	
+	/* Payment Page */
+	#chktpmt_lhs {
+		width:100%;
+		float:none;
+		margin-bottom:20px;
+	}
+	
+	#chktpmt_rhs {
+		width:100%;
+		float:none;
+	}
+	
+	/* Submit Page */
+	#chktrv_lhs {
+		width:100%;
+		float:none;
+		margin-bottom:20px;
+	}
+	
+	#chktrv_rhs {
+		width:100%;
+		float:none;
+	}
+	
+	div#chkbrcrumbs {
+		width:100%;
+		height:100%;
+		min-height:50px;
+		margin:30px 0;
+	}
+	
+	div.chkbrcrumbs_step {
+		height:100%;
+		min-height:50px; 
+		width:20%; margin-right:2.66%;
+	}
+	
+	div.chkbrcrumbs_lstep {
+		height:100%;
+		min-height:50px; 
+		width:20%;
+	}
+	
+	div#chkbrcrumbs h4 {
+		font-size:80%;	
+	}
+	
+	div#fix_expand {
+		/* In paymtincl.php, the div id="itemdetailssection" is unable to expand to 
+		accomodate increased height from reduced screen width. This is to hard-code in a tall div */
+		height:100%;
+		min-height:2000px;
+	}
+	
+
+}	
+	
+@media screen and (max-width:870px) {  /* Hide the megamenu and display a simple menu that does not have the drop-downs, etc. */
+
+	#megamenucontainer_shopping { 
+		display:none;
+	}
+	
+	div.nav-menu-container {  
+		width: 100%;
+		display: inline-block;
+		margin: 8px 40px;
+	}
+	
+	div.nav-menu, div.nav-menu-il {   /* nav-menu is for menus stacked vertically (home page); nav-menu-il is menus lined horizontally (other pages) */
+		display:inline;
+	}
+	
+	#companylogo {
+		display:none;
+	}
+	
+	#top {
+		min-height: 58px;
+		max-height: 100%;
+		width: 100%;
+	}
+	
+	#topcontainer {
+		min-height: 91px;
+		max-height: 100%;
+	}
+
+	
+	#companylogo_flattened {
+		display:inline;
+		float:left; 
+		margin:0 0 0 3.96%; padding: 0;
+		width:170px; height: 33px;
+		background: url(http://www.waxmode.com/responsive2/imagesnew/logogoldblack_flattened.png) no-repeat;
+	} 	
+	
+	h4.footerheader  
+	{
+	font:16px/24px 'mplus-1m-medium-webfont', Open Sans,sans-serif;
+	color:#ffffff;
+	padding-bottom:15px;
+	}
+	
+	a.bottommenu  { font:90% 'mplus-1m-regular-webfont', Open Sans,sans-serif; }
+	a.bottommenu:link {text-decoration:none;color:#ffffff;}  /* Previous #C0C0C0  light gray. */ 
+	a.bottommenu:visited {color:#ffffff;}
+	a.bottommenu:hover {color:#D4A50F;}   /* gold yellow */
+	a.bottommenu:active {color:#ffffff;} 
+	
+	#moredropdown {
+		display:none;
+	}
+ 
+}
+
+
+@media screen and (max-width:840px) {
+
+/* designer registration/sign-in page */
+	#desform-lhs {
+		width:100%; float:none; margin-bottom:20px;
+	}
+
+	#desform-btw {
+		display:none;
+	}
+
+	#desform-rhs {
+		width:100%; float:none; margin-bottom:20px;
+	}
+}
+
+
+@media screen and (max-width:780px) {
+
+	#top {
+		width: 100%;
+	}	
+	
+	.toptoplinks, .toptoplinksother {
+		color:#D4A50F;
+	}
+	
+	#mywrap, #mywrap_reg{  /* Sign in & Reg form for shoppers */
+		width:370px;
+		height:100%;
+	}
+	
+}
+
+@media screen and (max-width:720px) {
+
+	div#grpquery div#grplist {
+		display:none;
+	}
+	
+	div#grpquery div#grpbanner {		
+		display:banner;
+		width:100%;
+	}
+	
+	#grpfilter {
+	margin-left:0; width:100%; clear:both; 
+	}
+	
+	div#grpquery-ss {
+		display:block;
+		width:100%;
+	}
+	
+	div#grpquery-ss div#grplist {
+		display:block;
+		width:100%;
+	}
+	
+	div#grpquery-ss div#grpname {
+		display:none;
+	}
+	
+	div#grpquery-ss div#grpbanner {
+		display:none;		
+	}
+	
+	div#grpresultscontainer {
+		width:100%;	
+	}
+	
+	#grpresults-tdl {
+	width:0.1%;
+}
+
+	#grpresults-tdr {
+		width:99.9%;
+	}
+	
+	#grp4cols {
+	display:none;
+	}
+
+	#grp3cols {
+		display:block;
+	}
+	
+	#tdcols {  /* We move the columns of the results display 8.5% to the left to counteract the first spacer td that is 8.5% wide (in results-responsive.php) */
+		position:relative;
+		left:-8.5%;
+	}
+}
+
+@media screen and (max-width:650px) {  /* designer registration form */
+	#desregform {
+		display:none;
+	}
+
+	#desregform-small {  /* for smaller screen sizes */
+		display:inline;
+	}
+}
+
+/* Begin mobile phone design */
+@media screen and (max-width:550px) {
+
+		
+	#prodviews { width:100%; max-width:600px; margin-bottom:20px; margin-left:0%; display:block; }
+	#prodinfocontainer { width:100%; margin-left:0%; max-width:600px; display:block; } 	
+	#prodtitlearea { margin-left:0%; }
+
+	div.nav-menu {
+		display: block;
+		background-color:#ffffff;
+	}	
+	
+	div.nav-menu-il  ul li {
+		width: 33%;
+		border-right: thin solid #cccccc;
+		border-bottom: thin solid #cccccc;
+		background-color:#ffffff;
+	}
+	
+	div.nav-menu-il ul li a:link,
+	div.nav-menu-il ul li a:visited {
+		padding: 6px 20px 4px 10px;
+	}
+	
+	div.nav-menu ul li {
+		float: none;
+		border-bottom: 1px solid #cccccc;
+	}
+	
+	div.nav-menu ul li:last-child {
+		border-bottom: none;
+	}
+	
+	div.nav-menu-container {
+		width: 100%; /* PREVIOUS: width: 95%;  */
+		display: inline-block;
+		margin: 0;
+	}
+	
+	p#homepgshopnowbutton  {
+		display:none;
+	}
+	
+	div#idt2 { width:100%; float:none; }	
+	
+	td#flexidttd1 { width:100%; }
+	td#flexidttd2 { width:0%; }
+	
+	div#idt3 { width:100%; float:none; }
+	
+	table#idtt1 { width:100%; min-width:100% }
+	td#idttd1 { width:16%; }
+	td#idttd2 { width:84%; }
+	
+	h1#idtx1 { margin-top:20px; }
+	
+	h1#idtx1mb { display:block; }
+	
+	
+	a.regularbanner, table.hmimgtoprodregular {
+	display:none;
+	}
+	
+	a.mobilebanner, div.hmimgtoprodmobile {
+	display:block;
+	}
+	
+	div.nav-menu ul li a:link,
+	div.nav-menu ul li a:visited {
+		padding: 10px 20px 10px 10px;
+	}
+	
+	#toptop { 
+	background-color: #232323;
+	height: 43px;
+	}
+	
+	#companylogo_flattened {
+	display:inline;
+	float:left;
+	margin:0; padding: 0;
+	width:170px; height: 43px;
+	background: url(http://www.waxmode.com/responsive2/imagesnew/logogoldblack_flattened_tall.png) no-repeat;
+	} 
+	
+	#searchinmobile  {
+	display:inline;
+	float:right;
+	width:87px;
+	height:28px;
+	margin:7px 12px 0 0;
+	}
+	
+	#tfheader2 {
+	display:none;
+	}	
+	
+	#grp3cols {
+	display:none;
+	}
+
+	#grp2cols {
+		display:block;
+	}
+
+	.contactus_input {
+		width:180px;
+	}
+
+	.contactus_tarea {
+		width:180px;
+	}
+		
+	#contactus_rhs_inner {
+		width:300px;
+	}
+	
+	.contactus-rows {
+		width:290px;height:28px;margin-bottom:0;
+	}
+	
+	/* for the column text alignment in designrnav.php, in mobile screens. See div.navcoldiv styling in the megamenu section near bottom */
+	
+}
+
+@media screen and (max-width:480px) {
+
+	/* Radio Buttons for Color & Size */
+	input[type=radio]#radioc1 + label, input[type=radio]#radioc2 + label, input[type=radio]#radioc3 + label,
+	input[type=radio]#radioc4 + label, input[type=radio]#radioc5 + label, input[type=radio]#radioc6 + label, 
+	input[type=radio]#radioc7 + label, input[type=radio]#radioc8 + label, input[type=radio]#radioc9 + label,
+	input[type=radio]#radios1 + label, input[type=radio]#radios2 + label, input[type=radio]#radios3 + label,
+	input[type=radio]#radios4 + label, input[type=radio]#radios5 + label, input[type=radio]#radios6 + label, 
+	input[type=radio]#radios7 + label
+	{
+		margin:-1px;
+		padding: 1px 0;
+		width:35px; 
+		margin-right:4px;
+		font-size:75%;
+	}
+	
+	img#producttmb 
+	{   /* product image thumbnails */
+		margin-bottom:10px; 
+		height:92px; width:60px
+	}
+	
+	
+	#prodviews { height:545px; }
+	#thumbnails { height:545px; }
+	#imgshown { height:545px; }
+	
+	#mywrap, #mywrap_reg{ 
+		width:325px; padding:4px; margin:20px auto; 
+		height:100%;
+	}
+	
+
+
+}
+
+@media screen and (max-width:420px) {
+	#grp2cols {
+	display:none;
+	}
+
+	#grp1col {
+		display:block;
+	}
+	
+	/* Here, we eliminate the spacer td (in results-responsive.php) and make the products occupy almost 100% of the available width 
+	We also remove the relative positioning that first added when screen size was at 720px */
+	#tdcolspace {
+		width:0.1%;
+	}
+	
+	#tdcols {
+		width:99.9%;
+		position:relative;
+		left:0%;
+	}
+
+	/* Radio Buttons for Color & Size */
+	input[type=radio]#radioc1 + label, input[type=radio]#radioc2 + label, input[type=radio]#radioc3 + label,
+	input[type=radio]#radioc4 + label, input[type=radio]#radioc5 + label, input[type=radio]#radioc6 + label, 
+	input[type=radio]#radioc7 + label, input[type=radio]#radioc8 + label, input[type=radio]#radioc9 + label,
+	input[type=radio]#radios1 + label, input[type=radio]#radios2 + label, input[type=radio]#radios3 + label,
+	input[type=radio]#radios4 + label, input[type=radio]#radios5 + label, input[type=radio]#radios6 + label, 
+	input[type=radio]#radios7 + label {
+		margin:-1px;
+		padding: 1px 0;
+		width:30px; 
+		margin-right:4px;
+		font-size:70%;
+	}
+	
+	img#producttmb 
+	{   /* product image thumbnails */
+		margin-bottom:5px; 
+		height:76px; width:50px
+	}
+	
+	#prodviews { height:440px; }
+	#thumbnails { height:440px; }
+	#imgshown { height:440px; }
+	
+	h2#myacnt_link {
+		font-size:125%;
+	}
+	
+}
+
+@media screen and (max-width:360px) {
+	#prodviews { height:400px; }
+	#thumbnails { height:400px; }
+	#imgshown { height:400px; }
+	
+	h2#myacnt_link {
+		font-size:120%;
+	}
+}
+
+@media screen and (max-width:330px) {
+	#wrapper { 
+		min-width:330px; 
+	}	
+	
+	#social2  ul li a {
+		padding:0 8px 0 8px;
+	}
+	
+}
+/***************************************************************** 
+	End of Media Queries
+*****************************************************************/
+

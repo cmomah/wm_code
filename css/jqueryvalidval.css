@@ -1,0 +1,329 @@
+/* For styling of the shopper signin, createprofile, shipping forms 
+	(DOES NOT STYLE THE DESIGNER FORMS)
+	A few additional styles for shopper sign-in and registration forms are in the 
+	"Sign in and Registration form Styles" section in styles.css
+*/
+
+			
+			#wrap{ padding:0; width:480px; margin:20px auto; position:relative;}			
+
+			h1.formheading {
+				width: 340px;
+				padding: 0 0;  /* top/bottom  right/left */
+				text-align:center;
+				margin: 0 auto 20px auto;  /* top/bottom  right/left */
+				font:30px/18px 'mplus-1m-regular-webfont', sans-serif;
+				color:#696969; /* medium gray */
+			}
+			
+			h1.formheading span {
+				font:30px/18px 'mplus-1m-regular-webfont', sans-serif;
+				color: #E1A708;  /* gold */
+				/* font-weight:bold; */
+			}
+			
+			p.formintro {
+				width: 340px;
+				padding: 0 0;  /* top/bottom  right/left */
+				text-align:center;
+				margin: 10px auto;  /* top/bottom  right/left */
+				font:16px/17px 'mplus-1m-regular-webfont', sans-serif;
+				color:#696969; /* medium gray */
+			}
+			
+			p.formintro span {
+				font:16px/17px 'mplus-1m-regular-webfont', sans-serif;
+				color: #E1A708;  /* gold */
+			}
+			
+			p.formintro  a {
+				text-decoration:underline;
+			}
+   
+			p.formmessage {
+				width: 450px;
+				padding: 0 0;  /* top/bottom  right/left */
+				text-align:center;
+				margin: 10px auto 20px auto;  /* top/bottom  right/left */
+				font:13px/17px 'mplus-1m-regular-webfont', sans-serif;  /* Previous: Tw Cen MT Condensed; */
+				color:#696969; /* dark gray */
+			}
+
+			p.formmessage  a {
+				text-decoration:underline;
+			}	
+			
+			.fieldbuttons {
+				padding: 0 auto;  /* top/bottom  right/left */
+				margin: 0 auto;  /* top/bottom  right/left */
+				width: 180px;
+			}
+			
+			div#wrap #joinus {
+				padding: 0 auto;  /* top/bottom  right/left */
+				margin: 15px auto 0 auto;  /* top/bottom  right/left */
+				width: 340px;
+			}
+			
+			div#wrap #loginwithfacebook {
+				padding: 0 auto;  /* top/bottom  right/left */
+				margin: 0 auto 10px auto;  /* top/bottom  right/left */
+				width: 195px;
+			}	
+			
+			div#wrap #signin {
+				padding: 0 auto;  /* top/bottom  right/left */
+				margin: 15px auto 10px auto;  /* top/bottom  right/left */
+				width: 85px;
+			}	
+
+			div#wrap #spacer1 {
+				height: 20px;
+			}
+
+			div#wrap
+			{
+			width:100%;
+			}
+			
+			div.input
+			{
+			width:215px;
+			padding-bottom:4px;
+			margin:0 auto;
+			}
+			
+			div.shipform 
+			{
+			width:400px;
+			}
+			
+			div.shipform div.input  /* For shipping form, make the input divs wider than for other forms */
+			{
+			width:100%;
+			}
+						
+			div.csz  /* For city, state on the shipping form, reduce the div widths and make them fall into same line */
+			{
+			width:180px;
+			display:inline;float:left;
+			margin-right:10px;
+			margin-top: 6px;
+			}
+
+			div.countrystate   /* div for country / state dynamic dropdown */
+			{
+			width:180px;
+			display:inline;float:left;
+			margin-right:10px;
+			}
+			
+			/*	
+			div.cszlast  /* zip 
+			{
+			width:120px;
+			display:inline;float:left;
+			margin-right:0;
+			}
+			*/
+			
+			/*
+			input#i1,
+			input#i2,
+			input#i3,
+			*/
+			
+			div.input select
+			{ 
+				color: #6D6D6D; 
+				font-family: 'mplus-1m-regular-webfont', sans-serif;
+			}
+			
+			div.input input[type='text'],
+			div.input input[type='password'],
+			div.input input[type='number'],
+			div.input input[type='email'],
+			div.input input[type='url'],
+			div.input textarea, 
+			div.input select
+			{ 
+				background-color: #fff; 
+				border: solid 1px #999;
+				width: 215px;
+				padding: 3px;
+				font:14px 'mplus-1m-regular-webfont', sans-serif;
+			}
+			
+			/* For shipping form, make the input boxes width different than for other forms */
+			div.shipform div.input input[type='text'], 
+			div.shipform div.input select
+			{
+				width: 370px;
+			}
+			
+			/* For city, state on the shipping form */
+			div.input div.csz input[type='text'], 
+			div.input div.csz select
+			{
+				width: 170px;
+			}
+			
+			div.input div.countrystate input[type='text'], 
+			div.input div.countrystate select
+			{
+				width: 170px;
+			}
+			
+			/*
+			div.input div.cszlast input[type='text'], /* For zip
+			div.input div.cszlast select
+			{
+				width: 110px;
+			}
+			*/
+			
+			
+			/* For the "Submit" on the shipping form */ 
+			div.shpsubmit {
+				clear:both;
+				margin-left: 0;  
+				width: 100%;
+			}
+			
+			/*
+			div.input input[type='text'].focus,
+			div.input input[type='password'].focus,
+			div.input input[type='number'].focus,
+			div.input input[type='email'].focus,
+			div.input input[type='url'].focus,
+			div.input textarea.focus,
+			div.input select.focus
+			{ 
+				border-color: #000; 
+			}
+			*/
+			
+			div.input input[type='text'].inactive,
+			div.input input[type='number'].inactive,
+			div.input input[type='email'].inactive,
+			div.input input[type='url'].inactive,
+			div.input textarea.inactive,
+			div.input select.inactive,
+			div.input option.inactive
+			{
+				color: #999;
+				font:14px 'mplus-1m-regular-webfont', sans-serif;
+			}
+			div.input input[type='text'].invalid,
+			div.input input[type='password'].invalid,
+			div.input input[type='number'].invalid,
+			div.input input[type='email'].invalid,
+			div.input input[type='url'].invalid, 
+			div.input textarea.invalid, select.invalid
+			{
+				border-color: red;
+				font:14px 'mplus-1m-regular-webfont', sans-serif;
+			}			
+			/*
+			label
+			{
+				width: 100px;
+				padding: 5px 0 0 15px;
+				display: block;
+				float:left;
+			}
+		  */
+
+		  			
+
+			div.input textarea
+			{
+				height: 100px; 
+				font:14px 'mplus-1m-regular-webfont', sans-serif;
+			}
+			
+			
+			/*
+
+
+		  * {
+				color: #000;
+			}
+
+			
+			
+			span.checkbox-container
+			{
+				border: 1px solid transparent;
+				display: block;
+				width: 145px;
+				padding: 2px 5px;
+				float: left;
+			}
+			span.checkbox-container.invalid
+			{
+				border-color: red;
+			}
+
+			select.inactive option
+			{
+				color: #000;
+				font-style: normal;
+			}
+			select option.inactive,
+			select.inactive option.inactive
+			{
+				color: #999;
+				font-style: italic;
+			}
+			
+			input[type='submit'] 
+			{
+				margin: 0 20px 0 90px;
+			}
+
+
+			body, p, input
+			{
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+			}
+			h2 
+			{
+				color: #999;
+			}			
+			
+			
+			body > div 
+			{
+				width: 740px;
+				margin: 50px auto 0 auto;
+				overflow: hidden;
+			}
+			.column
+			{
+				padding: 30px 0 50px 0;
+				margin: 20px 0;
+				width: 350px;
+				float: left;
+			}
+			.column.right
+			{
+				float: right;
+			}
+			.column.left
+			{
+				border-right: 1px solid #ccc;
+			}
+			.column div
+			{
+				padding: 2px 0;
+			}
+			.column div:after
+			{
+				content: '';
+				display: block;
+				clear: both;
+			}
+			*/
+			
